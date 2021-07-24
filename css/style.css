@@ -1,0 +1,195 @@
+.top-bar > .container > .row{
+	/* display: flex; */
+	margin-top: 1px;
+	/* justify-content: space-around; */
+}
+
+.top-bar {
+	border-top: 2px solid red;
+	margin-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* .top-bar > .container {
+	margin-left: 15%;
+	margin-right: 15%;
+} */
+
+.top-bar__links {
+	display: flex;
+}
+
+.top-bar__links > li >a {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.dropdown-icon {
+	position: relative;
+	left: 5px;
+	top: -2px;
+}
+
+.top-bar__links > li {
+	border: 1px solid grey;
+	padding: 10px 20px;
+	position: relative;
+	border: none;
+}
+
+.list-items__links {
+	position: absolute;
+	left: 0;
+	margin: 10px -1px 0;
+	padding: 5px 0;
+	min-width: 170px;
+	display: none;
+	z-index: 1000;
+	background-color: #fff;
+}
+
+.list-items__links > li {
+	font-size: 11px;
+	padding: 10px 20px;
+}
+
+.dropdown:hover .list-items__links {
+	display: block;
+}
+
+.top-bar__links .dropdown:not(:first-child):hover {
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.dropdown:hover .dropdown-items {
+	color: #fff;
+}
+
+.top-bar__links .dropdown:first-child:hover {
+	background-color: #DD0000;
+	cursor: pointer;
+}
+
+.list-items__links .links-items:hover  {
+	border-right: 5px solid #DD0000;
+	border-bottom: 1px solid grey;
+}
+
+.links-items:hover .links-items__items {
+	color: #DD0000;
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------- */
+/* Style Table */
+
+
+/* .table > .container {
+	margin-left: 15%;
+	margin-right: 15%;
+}  */
+
+.table > .container > .row {
+	/* display: flex; */
+	/* justify-content: space-around; */
+	margin-top: 50px;
+}
+
+.customer {
+	width: 900px;
+	border-collapse: collapse;
+}
+
+.customer th,td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.customer th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.customer tr:nth-of-type(even) {
+	background-color: lightskyblue;
+}
+
+.customer tr:nth-of-type(odd) {
+	background-color: #D8D8D8;
+}
+
+.customer tr:hover {
+	background-color: red;
+	color: white;
+}
+
+/* -------------------------------------------------- */
+
+.course {
+	margin-top: 80px;
+	background-color: #D8D8D8;
+}
+
+.course > .container > .row:last-child {
+	margin-top: 50px;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.row h1 {
+	color: #585858;
+	margin-top: 10px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.course__Fe--image img {
+	width: 100%;
+	height: 150px;
+}
+
+.course > .container > .row > .col:not(:last-child) {
+	margin-right: 20px;
+}
+
+.course > .container > .row > .col {
+	background-color: #fff;
+	margin-bottom: 2rem;
+}
+
+.course__Fe h3 {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	color: #2E2E2E;
+	margin-top: 2rem;
+}
+
+.course__Fe hr {
+	width: 86%;
+	margin: auto;
+	height: 2.5px;
+	background-color: lightblue;
+	border: none;
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
+}
+
+.course__Fe p {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	color: #2E2E2E;
+	margin-bottom: 2rem;
+}
